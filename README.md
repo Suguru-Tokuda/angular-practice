@@ -1,6 +1,6 @@
 # MyFirstApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8. Also, this Angular Practice App was developed by following David Connely's tutorials[Learn Angular5](https://www.youtube.com/watch?v=9icBcAmppZw&list=PLBEpR3pmwCawceoHIydl8YDdJBufzKqd1)
 
 ## Development server
 
