@@ -1,0 +1,73 @@
+<h1>About {{ about.myName }}</h1>
+<p>The Wikimedia Foundation is a non-profit organization that depends on your voluntarism and donations to operate. If you find Wikibooks or other projects hosted by the Wikimedia Foundation useful, please volunteer or make a donation. Your donations primarily helps to purchase server equipment, launch new projects, and develop MediaWiki—the software that makes Wikibooks possible.</p>
+<p>The Wikimedia Foundation is a non-profit organization that depends on your voluntarism and donations to operate. If you find Wikibooks or other projects hosted by the Wikimedia Foundation useful, please volunteer or make a donation. Your donations primarily helps to purchase server equipment, launch new projects, and develop MediaWiki—the software that makes Wikibooks possible.</p>
+<p>The Wikimedia Foundation is a non-profit organization that depends on your voluntarism and donations to operate. If you find Wikibooks or other projects hosted by the Wikimedia Foundation useful, please volunteer or make a donation. Your donations primarily helps to purchase server equipment, launch new projects, and develop MediaWiki—the software that makes Wikibooks possible.</p>
+
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+
+<button type="button" class="btn btn-link">Link</button>
+
+<div class="row" style="margin-top: 40px;">
+  <div class="col">
+    <div ngbDropdown class="d-inline-block">
+      <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Toggle dropdown</button>
+      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+        <button class="dropdown-item">Action - 1</button>
+        <button class="dropdown-item">Another Action</button>
+        <button class="dropdown-item">Something else is here</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="col text-right">
+    <div ngbDropdown placement="top-right" class="d-inline-block">
+      <button class="btn btn-outline-primary" id="dropdownBasic2" ngbDropdownToggle>Toggle dropup</button>
+      <div ngbDropdownMenu aria-labelledby="dropdownBasic2">
+        <button class="dropdown-item">Action - 1</button>
+        <button class="dropdown-item">Another Action</button>
+        <button class="dropdown-item">Something else is here</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<ng-template #content let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <h4 class="modal-title">Profile update</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="form-group">
+        <label for="dateOfBirth">Date of birth</label>
+        <div class="input-group">
+          <input id="dateOfBirth" class="form-control" placeholder="yyyy-mm-dd" name="dp" ngbDatepicker #dp="ngbDatepicker">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" (click)="dp.toggle()" type="button">
+              <img src="img/calendar-icon.svg" style="width: 1.2rem; height: 1rem; cursor: pointer;"/>
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">Save</button>
+  </div>
+</ng-template>
+
+<button class="btn btn-lg btn-outline-primary" (click)="open(content)">Launch demo modal</button>
+
+<hr>
+
+<pre>{{closeResult}}</pre>

@@ -1,0 +1,13 @@
+<p style="padding: 12px;">
+  <button class="btn btn-primary" (click)="changePageLoadState()">Change Page Load State</button>
+</p>
+<p>
+  loading is {{ loading }}
+</p>
+
+<div class="loader loader--audioWave" *ngIf="loading"></div>
+<div *ngIf="!loading">The thing is NOT loading</div>
+
+<ul>
+  <li *ngFor="let author of authors">{{ author.firstName }} {{ author.lastName }}</li>
+</ul>

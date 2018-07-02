@@ -1,0 +1,74 @@
+.loader {
+    margin: 5em auto;
+  }
+  
+  .loader--audioWave {
+    width: 10em;
+    height: 10em;
+    background: 
+      linear-gradient(#f25022, #f25022) 2em 50%, 
+      linear-gradient(#7fba00, #7fba00) 4em 50%, 
+      linear-gradient(#ffb901, #ffb901) 6em 50%,
+      linear-gradient(#01a4ef, #01a4ef) 8em 50%; 
+    background-repeat: no-repeat;
+    background-size: 
+      1.0em 0.5em,
+      1.0em 0.5em, 
+      1.0em 0.5em, 
+      1.0em 0.5em;
+    animation: audioWave 2s linear infinite;
+  }
+  @keyframes audioWave {
+    25% {
+      background: 
+      linear-gradient(#9b59b6, #9b59b6) 2em 50%, 
+      linear-gradient(#9b59b6, #9b59b6) 4em 50%, 
+      linear-gradient(#9b59b6, #9b59b6) 6em 50%,
+      linear-gradient(#9b59b6, #9b59b6) 8em 50%; 
+      background-repeat: no-repeat;
+      background-size: 
+        1.0em 4.0em, 
+        1.0em 0.5em, 
+        1.0em 0.5em, 
+        1.0em 0.5em;
+    }
+    50% {
+      background: 
+      linear-gradient(#9b59b6, #9b59b6) 2em 50%, 
+      linear-gradient(#9b59b6, #9b59b6) 4em 50%, 
+      linear-gradient(#9b59b6, #9b59b6) 6em 50%,
+      linear-gradient(#9b59b6, #9b59b6) 8em 50%; 
+      background-repeat: no-repeat;
+      background-size: 
+        1.0em 0.5em, 
+        1.0em 4.0em, 
+        1.0em 0.5em, 
+        1.0em 0.5em; 
+    }
+    75% {
+      background: 
+      linear-gradient(#9b59b6, #9b59b6) 2em 50%, 
+      linear-gradient(#9b59b6, #9b59b6) 4em 50%, 
+      linear-gradient(#9b59b6, #9b59b6) 6em 50%,
+      linear-gradient(#9b59b6, #9b59b6) 8em 50%;  
+      background-repeat: no-repeat;
+      background-size:
+        1.0em 0.5em, 
+        1.0em 0.5em, 
+        1.0em 4.0em, 
+        1.0em 0.5em; 
+    }
+    100% {
+      background: 
+      linear-gradient(#9b59b6, #9b59b6) 2em 50%, 
+      linear-gradient(#9b59b6, #9b59b6) 4em 50%, 
+      linear-gradient(#9b59b6, #9b59b6) 6em 50%,
+      linear-gradient(#9b59b6, #9b59b6) 8em 50%;  
+      background-repeat: no-repeat;
+      background-size: 
+        1.0em 0.5em, 
+        1.0em 0.5em, 
+        1.0em 0.5em, 
+        1.0em 4.0em;
+    }
+  }
